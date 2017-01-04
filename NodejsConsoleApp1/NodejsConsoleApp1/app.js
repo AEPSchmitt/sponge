@@ -1,1 +1,8 @@
-console.log('Hello Casper');
+"use strict";
+const fs = require('fs');
+
+fs.readdir(__dirname, (err, files) => {
+    files.forEach(file => {
+    console.log(file);
+    });
+})
